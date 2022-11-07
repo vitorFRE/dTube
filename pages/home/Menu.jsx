@@ -113,7 +113,7 @@ const Menu = () => {
     <StyledMenu>
       <div className="menu container">
         <Image
-          src="/images/logo.svg"
+          src="/images/LogoMenu.svg"
           alt="Logo aluratube"
           width={127}
           height={25}
