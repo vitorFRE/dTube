@@ -1,0 +1,61 @@
+{
+  "name": "Vitor",
+  "job": "Front-End Developer",
+  "github": "VitorFRE",
+  "playlists": {
+    "Music": [
+      {
+        "title": "Egzod & Maestro Chives - Royalty (ft. Neoni)",
+        "url": "https://youtu.be/lW9ep22YmlM?list=RDM3FTjJlya50",
+        "thumb": "https://img.youtube.com/vi/lW9ep22YmlM/mqdefault.jpg"
+      },
+      {
+        "title": "Gaullin - OP OPA",
+        "url": "https://www.youtube.com/watch?v=cYFKumTg-Pc",
+        "thumb": "https://img.youtube.com/vi/cYFKumTg-Pc/mqdefault.jpg"
+      },
+      {
+        "title": "Kid Francescoli - Moon ",
+        "url": "https://www.youtube.com/watch?v=fdixQDPA2h0",
+        "thumb": "https://img.youtube.com/vi/fdixQDPA2h0/mqdefault.jpg"
+      },
+      {
+        "title": "Öwnboss, Sevek - Move Your Body",
+        "url": "https://www.youtube.com/watch?v=UfiYPq7-M3E",
+        "thumb": "https://img.youtube.com/vi/UfiYPq7-M3E/mqdefault.jpg"
+      },
+      {
+        "title": "Close Eyes",
+        "url": "https://www.youtube.com/watch?v=OSbhFr5TzkQ",
+        "thumb": "https://img.youtube.com/vi/OSbhFr5TzkQ/mqdefault.jpg"
+      }
+    ],
+    "front-end": [
+      {
+        "title": "ASMR Programming - Modern Login Page UI Design",
+        "url": "https://youtu.be/lW9ep22YmlM?list=9g7rFjOuggU",
+        "thumb": "https://img.youtube.com/vi/9g7rFjOuggU/mqdefault.jpg"
+      },
+      {
+        "title": "Build A Photography Portfolio Website With React JS, Tailwind CSS And Framer Motion",
+        "url": "https://www.youtube.com/watch?v=yOzUg9HDtFw",
+        "thumb": "https://img.youtube.com/vi/yOzUg9HDtFw/mqdefault.jpg"
+      },
+      {
+        "title": "Build and Deploy a Fully Responsive Website with Modern UI/UX in React JS with Tailwind",
+        "url": "https://www.youtube.com/watch?v=_oO4Qi5aVZs",
+        "thumb": "https://img.youtube.com/vi/_oO4Qi5aVZs/mqdefault.jpg"
+      },
+      {
+        "title": "Como usar imagens no Next.js?",
+        "url": "https://www.youtube.com/watch?v=LQqliNavVYQ",
+        "thumb": "https://img.youtube.com/vi/LQqliNavVYQ/mqdefault.jpg"
+      },
+      {
+        "title": "Como Fazer Uma API (o jeito mais fácil e moderno que eu já vi)",
+        "url": "https://www.youtube.com/watch?v=f7JWDLFhR_c",
+        "thumb": "https://img.youtube.com/vi/f7JWDLFhR_c/mqdefault.jpg"
+      }
+    ]
+  }
+}

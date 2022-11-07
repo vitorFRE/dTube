@@ -1,0 +1,56 @@
+.videos {
+  display: flex;
+  gap: 15px;
+}
+.videos span {
+  font-family: "Roboto","Arial",sans-serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 500;
+  max-height: 4rem;
+  overflow: hidden;
+  display: block;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.videos a img {
+  display: block;
+  width: 320px;
+  max-width: 320px;
+}
+
+.videos_container h2{
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.sublinha_roxa {
+  position: relative;
+}
+
+.sublinha_roxa::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: #522ba7;
+  width: 30px;
+  height: 3px;
+  border-radius: 10px;
+  left: -1px;
+}
+
+.videos {
+  overflow-x: auto;
+}
+
+@media (max-width: 800px) {
+  .videos a img {
+    display: block;
+    width: 220px;
+    max-width: 220px;
+  }
+}
