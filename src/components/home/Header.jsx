@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styled from 'styled-components';
-import data from '../../data.json';
+import data from '../../../data.json';
 
 const StyledHeader = styled.div`
   .profile_pic {

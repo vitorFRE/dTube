@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import data from '../../data.json';
-import styles from './TimeLine.module.css';
+import styles from '../../src/components/TimeLine.module.css';
 
 const TimeLine = ({ searchValue }) => {
   return (

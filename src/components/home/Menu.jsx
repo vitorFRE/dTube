@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styled from 'styled-components';
-import Search from '../../src/components/Search';
+import Search from '../Search';
 
 const StyledMenu = styled.header`
   .menu {

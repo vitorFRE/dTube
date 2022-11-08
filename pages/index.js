@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import React from 'react';
 import { CSSReset } from '../src/components/CSSReset';
-import Footer from './home/Footer';
-import Header from './home/Header';
-import Menu from './home/Menu';
-import TimeLine from './home/TimeLine';
+import Footer from '../src/components/home/Footer';
+import Header from '../src/components/home/Header';
+import Menu from '../src/components/home/Menu';
+import TimeLine from '../src/components/TimeLine';
 
 export default function Home() {
   const [valorFiltro, setValorFiltro] = React.useState('');
