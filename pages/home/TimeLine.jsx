@@ -3,7 +3,7 @@ import Image from 'next/image';
 import data from '../../data.json';
 import styles from './TimeLine.module.css';
 
-const TimeLine = ({ searchValue, ...props }) => {
+const TimeLine = ({ searchValue }) => {
   return (
     <div>
       {Object.keys(data.playlists).map((name) => {
