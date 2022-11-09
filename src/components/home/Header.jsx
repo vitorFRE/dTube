@@ -7,6 +7,9 @@ const StyledHeader = styled.div`
   .profile_pic {
     border-radius: 50px;
   }
+  .user_info_bg {
+    background-color: ${({ theme }) => theme.BackgroundColor || '#fff'};
+  }
   .user_info {
     display: flex;
     align-items: center;
@@ -18,15 +21,16 @@ const StyledHeader = styled.div`
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 5px;
+    color: ${({ theme }) => theme.textColorBase || '#222'};
   }
   .user_info_text h1 span {
     font-size: 1rem;
-    color: #522ba7;
+    color: #7121d9;
   }
   .user_info_text p {
     font-family: 'Helvetica';
     font-size: 1rem;
-    color: #666666;
+    color: ${({ theme }) => theme.textColorBase2 || '#666666'};
     font-weight: 400px;
   }
   .banner_bg img {
@@ -50,20 +54,22 @@ const Header = () => {
           placeholder="blur"
         />
       </div>
-      <div className="user_info container">
-        <Image
-          className="profile_pic"
-          src="/images/profile.png"
-          alt="profile image"
-          width={80}
-          height={80}
-        />
+      <div className="user_info_bg">
+        <div className="user_info container">
+          <Image
+            className="profile_pic"
+            src="/images/profile.png"
+            alt="profile image"
+            width={80}
+            height={80}
+          />
 
-        <div className="user_info_text">
-          <h1>
-            {data.name} <span>({data.github})</span>
-          </h1>
-          <p>{data.job}</p>
+          <div className="user_info_text">
+            <h1>
+              {data.name} <span>({data.github})</span>
+            </h1>
+            <p>{data.job}</p>
+          </div>
         </div>
       </div>
     </StyledHeader>

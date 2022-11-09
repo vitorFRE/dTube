@@ -10,22 +10,6 @@ const StyledSearch = styled.div`
     width: 450px;
   }
 
-  .busca_img {
-    height: 100%;
-    display: flex;
-    border-radius: 0 2px 2px 0;
-    background-color: #f0f0f0;
-    cursor: pointer;
-    border: 1px solid #522ba7;
-  }
-
-  .busca img {
-    width: 28px;
-    height: 28px;
-    margin: auto auto auto auto;
-    display: block;
-  }
-
   .busca input::placeholder {
     font-family: 'Helvetica';
     font-weight: 400;
@@ -61,9 +45,6 @@ const Search = ({ valorFiltro, setValorFiltro }) => {
           onChange={(e) => setValorDaBusca(e.target.value)}
           value={valorDaBusca}
         />
-        <button className="busca_img">
-          <Image src="/images/busca.svg" alt="Buscar" width={16} height={16} />
-        </button>
       </div>
     </StyledSearch>
   );
