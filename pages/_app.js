@@ -11,6 +11,7 @@ const theme = {
     textColorBase: '#222',
     textColorBase2: '#666666',
     textColorBase3: '#522ba7',
+    corLogo: '#522ba7',
   },
   dark: {
     BackgroundColor: '#180d39',
@@ -18,6 +19,7 @@ const theme = {
     textColorBase: '#F1F6FA',
     textColorBase2: '#9497A1',
     textColorBase3: '#F1F6FA',
+    corLogo: '#522ba7',
   },
 };
 

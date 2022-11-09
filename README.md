@@ -14,6 +14,9 @@ AluraTube feito na imersão react da alura
 <p align="center">
   <img alt="Preview" src="/img.png" width="100%">
 </p>
+<p align="center">
+  <img alt="Preview2" src="/img2.png" width="100%">
+</p>
 
 ## 🚀 Tecnologias
 

@@ -22,8 +22,8 @@ const StyledSearch = styled.div`
     padding: 12px 0 12px 10px;
     background: #f1f1f1;
     color: #000;
-    border: 1px solid #e5e5e5;
-    border-radius: 2px;
+    border: 1px solid #6c40a5;
+    border-radius: 20px;
     max-width: 100%;
   }
   .busca input:focus {
