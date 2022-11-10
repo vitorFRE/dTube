@@ -27,6 +27,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [React](https://pt-br.reactjs.org/)
 - [Node e NPM](https://nodejs.org/)
 - [NextJS](https://nextjs.org/)
+- [StyledComponents](https://styled-components.com/)
 
 ## 💻 Projeto
 
