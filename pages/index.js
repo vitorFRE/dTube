@@ -4,9 +4,29 @@ import Footer from '../src/components/home/Footer';
 import Header from '../src/components/home/Header';
 import Menu from '../src/components/home/Menu';
 import TimeLine from '../src/components/TimeLine';
+import data from '../data.json';
+import { videoService } from '../src/components/services/videoService';
 
 export default function Home() {
+  const service = videoService();
   const [valorFiltro, setValorFiltro] = React.useState('');
+  const [playlists, setPlayLists] = React.useState({});
+
+  React.useEffect(() => {
+    service.getAllVideos().then((dados) => {
+      const novasPlaylists = {};
+      dados.data.forEach((video) => {
+        if (!novasPlaylists[video.playlist])
+          novasPlaylists[video.playlist] = [];
+        novasPlaylists[video.playlist] = [
+          video,
+          ...novasPlaylists[video.playlist],
+        ];
+      });
+      setPlayLists(novasPlaylists);
+    });
+  }, []);
+
   return (
     <div>
       <Head>
@@ -16,7 +36,7 @@ export default function Home() {
       </Head>
       <Menu valorFiltro={valorFiltro} setValorFiltro={setValorFiltro} />
       <Header />
-      <TimeLine searchValue={valorFiltro} />
+      <TimeLine searchValue={valorFiltro} playlists={playlists} />
       <Footer />
     </div>
   );

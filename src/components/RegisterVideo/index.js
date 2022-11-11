@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { StyledRegisterVideo } from './styles';
+import { createClient } from '@supabase/supabase-js';
 
 function useForm(propsDoForm) {
   const [values, setValues] = useState(propsDoForm.initialValues);
@@ -15,10 +16,25 @@ function useForm(propsDoForm) {
     },
   };
 }
+const supabase = createClient(
+  process.env.NEXT_PUBLIC_URL,
+  process.env.NEXT_PUBLIC_KEY,
+);
+
+function getThumb(url) {
+  const urlDoVideo = url;
+  const id = urlDoVideo.split('=');
+  const thumb = `https://img.youtube.com/vi/${id[1]}/mqdefault.jpg`;
+  return thumb;
+}
 
 export default function RegisterVideo() {
   const formCadastro = useForm({
-    initialValues: { titulo: 'Frost punk', url: 'https://youtube..' },
+    initialValues: {
+      titulo: '',
+      url: '',
+      playlist: '',
+    },
   });
   const [modal, setModal] = useState(false);
 
@@ -31,6 +47,22 @@ export default function RegisterVideo() {
         <form
           onSubmit={(e) => {
             e.preventDefault();
+
+            supabase
+              .from('Videos')
+              .insert({
+                title: formCadastro.values.titulo,
+                url: formCadastro.values.url,
+                thumb: getThumb(formCadastro.values.url),
+                playlist: formCadastro.values.playlist,
+              })
+              .then((oq) => {
+                console.log(oq);
+              })
+              .catch((err) => {
+                console.log(err);
+              });
+
             setModal(false);
             formCadastro.clearForm();
           }}
@@ -53,6 +85,10 @@ export default function RegisterVideo() {
               value={formCadastro.values.url}
               onChange={formCadastro.handleChange}
             />
+            <select name="playlist" onChange={formCadastro.handleChange}>
+              <option value="music">Musica</option>
+              <option value="front-end">Front-End</option>
+            </select>
             <button type="submit">Cadastrar</button>
           </div>
         </form>

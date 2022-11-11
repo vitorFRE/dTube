@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import Image from 'next/image';
-import data from '../../data.json';
 import styled from 'styled-components';
 
 const StyledHeader = styled.div`
@@ -36,8 +35,9 @@ const StyledHeader = styled.div`
     max-width: 320px;
   }
 
-  .videos a:hover {
+  .videos div:hover {
     opacity: 0.9;
+    cursor: pointer;
   }
 
   .videos_container h2 {
@@ -152,7 +152,7 @@ const StyledModal = styled.div`
   }
 `;
 
-const TimeLine = ({ searchValue }) => {
+const TimeLine = ({ searchValue, ...props }) => {
   const [modalabrir, setModalabrir] = useState(false);
   const [videolink, setVideoLink] = useState('');
   const umaRef = useRef();
@@ -186,8 +186,8 @@ const TimeLine = ({ searchValue }) => {
         ) : null}
 
         <div className="videos_bg">
-          {Object.keys(data.playlists).map((name) => {
-            const videos = data.playlists[name];
+          {Object.keys(props.playlists).map((name) => {
+            const videos = props.playlists[name];
             return (
               <section key={name} className="videos_container container">
                 <h2 className="sublinha_roxa">{name}</h2>
