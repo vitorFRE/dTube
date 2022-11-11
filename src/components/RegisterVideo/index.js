@@ -33,7 +33,7 @@ export default function RegisterVideo() {
     initialValues: {
       titulo: '',
       url: '',
-      playlist: '',
+      playlist: 'music',
     },
   });
   const [modal, setModal] = useState(false);
