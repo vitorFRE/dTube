@@ -1,7 +1,7 @@
-<h1 align="center"> AluraTube </h1>
+<h1 align="center"> dTube </h1>
 
 <p align="center">
-AluraTube feito na imersão react da alura 
+Projeto feito durante a imersão react da alura.
 </p>
 
 <p align="center">

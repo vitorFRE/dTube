@@ -62,7 +62,6 @@ export default function RegisterVideo() {
               .catch((err) => {
                 console.log(err);
               });
-
             setModal(false);
             formCadastro.clearForm();
           }}

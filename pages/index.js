@@ -4,7 +4,6 @@ import Footer from '../src/components/home/Footer';
 import Header from '../src/components/home/Header';
 import Menu from '../src/components/home/Menu';
 import TimeLine from '../src/components/TimeLine';
-import data from '../data.json';
 import { videoService } from '../src/components/services/videoService';
 
 export default function Home() {
